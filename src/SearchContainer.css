@@ -1,20 +1,21 @@
 #search-container {
   background-color: rgba(151, 200, 232, 255);
+  border: 1px solid rgba(69, 34, 98, 255);
 }
 
 .pb-4 {
-  color: rgb(43, 56, 134);
+  color: rgba(69, 34, 98, 255);
 }
 
 .form-control {
   width: 20rem;
   background-color: rgb(180, 233, 230);
-  border-color: rgb(43, 56, 134);
+  border-color: rgba(69, 34, 98, 255);
   border-style: dotted;
 }
 
 button {
-  background-color: rgb(43, 56, 134);
+  background-color: rgba(69, 34, 98, 255);
   color: white;
   border-radius: 0.3rem;
   letter-spacing: 0.1rem;
