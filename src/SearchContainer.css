@@ -1,0 +1,21 @@
+#search-container {
+  background-color: rgba(151, 200, 232, 255);
+}
+
+.pb-4 {
+  color: rgb(43, 56, 134);
+}
+
+.form-control {
+  width: 20rem;
+  background-color: rgb(180, 233, 230);
+  border-color: rgb(43, 56, 134);
+  border-style: dotted;
+}
+
+button {
+  background-color: rgb(43, 56, 134);
+  color: white;
+  border-radius: 0.3rem;
+  letter-spacing: 0.1rem;
+}
