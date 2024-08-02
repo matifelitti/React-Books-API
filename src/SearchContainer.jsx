@@ -11,9 +11,9 @@ function SearchContainer() {
           </h1>
 
           <div className="d-grid gap-3 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <form className="d-flex" role="search">
+            <form className="d-flex w-100" role="search">
               <input
-                className="form-control me-3 shadow-none"
+                className="form-control me-3 shadow-none w-100"
                 type="search"
                 placeholder="For Example: To Kill a Mockingbird"
                 aria-label="Search"

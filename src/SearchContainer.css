@@ -1,6 +1,6 @@
 #search-container {
   background-color: rgba(151, 200, 232, 255);
-  border: 1px solid rgba(69, 34, 98, 255);
+  border: 2px solid rgba(69, 34, 98, 255);
 }
 
 .pb-4 {
@@ -17,6 +17,7 @@
 button {
   background-color: rgba(69, 34, 98, 255);
   color: white;
+  border: none;
   border-radius: 0.3rem;
   letter-spacing: 0.1rem;
 }
