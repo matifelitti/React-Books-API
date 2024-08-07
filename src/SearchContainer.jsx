@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SearchContainer.css";
+import axios from "axios";
 
 function SearchContainer() {
+  const [searchInput, setSearchInput] = useState("");
+  const searchButton = (event) => {
+    if (event.key === "Enter") {
+      axios.get(
+        "https://www.googleapis.com/books/v1/volumes?q=" +
+          searchInput +
+          "&key=AIzaSyBJ4bH0jtAP7_hL0NIE-5-hxj04y2KYaAk".then().catch()
+      );
+    }
+  };
+
   return (
     <div className="container my-4" id="search-container">
       <div className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-none shadow-lg">
@@ -17,6 +29,9 @@ function SearchContainer() {
                 type="search"
                 placeholder="For Example: To Kill a Mockingbird"
                 aria-label="Search"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+                onKeyPress={searchButton}
               ></input>
               <button type="button" className="btn-lg px-3 fw-bold">
                 Search
