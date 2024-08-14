@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
+import Modal from "./Modal";
 
 function Card({ bookData }) {
+  const [show, setShow] = useState(false);
+  const [book, setBook] = useState(null);
+
+  const handleClose = () => setShow(false);
+  const handleShow = (item) => {
+    setBook(item);
+    setShow(true);
+  };
+
   return (
     <div className="row m-5 justify-content-center">
       {bookData.map((item) => {
@@ -12,9 +22,13 @@ function Card({ bookData }) {
         const authors = item.volumeInfo.authors
           ? item.volumeInfo.authors.join(", ")
           : "Unknown Author";
-        if (thumbnail != undefined) {
+        if (thumbnail) {
           return (
-            <div key={item.id} className="card col-md-3 mx-3 my-3">
+            <div
+              key={item.id}
+              className="card col-md-3 mx-3 my-3"
+              onClick={() => handleShow(item)}
+            >
               <img
                 src={thumbnail}
                 className="card-img-top mx-auto m-3 p-3"
@@ -27,7 +41,10 @@ function Card({ bookData }) {
             </div>
           );
         }
+        return null;
       })}
+
+      {book && <Modal show={show} item={book} close={handleClose} />}
     </div>
   );
 }

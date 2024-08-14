@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchContainer.css";
-import Card from "./Card";
 import axios from "axios";
+import Card from "./Card";
 
 function SearchContainer() {
   const [searchInput, setSearchInput] = useState("");

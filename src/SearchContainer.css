@@ -21,3 +21,8 @@ button {
   border-radius: 0.3rem;
   letter-spacing: 0.1rem;
 }
+
+button:hover {
+  background-color: rgba(100, 80, 150, 255);
+  color: white;
+}
