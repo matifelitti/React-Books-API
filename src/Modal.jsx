@@ -14,10 +14,10 @@ const Modal = ({ show, item, close }) => {
       <div className="modal-content">
         <div className="modal-header">
           <img src={thumbnail} alt="book image" />
-          <h5 className="modal-title">{item.volumeInfo.title}</h5>
+          <h5 className="modal-title fw-bold fs-5">{item.volumeInfo.title}</h5>
         </div>
         <div className="modal-body">
-          <div className="content">
+          <div className="content fs-6">
             <p>{item.volumeInfo.description}</p>
             <p>
               <strong>Authors:</strong> {item.volumeInfo.authors.join(", ")}

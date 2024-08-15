@@ -13,7 +13,7 @@ function Card({ bookData }) {
   };
 
   return (
-    <div className="row m-5 justify-content-center">
+    <div className="row justify-content-center">
       {bookData.map((item) => {
         const thumbnail =
           item.volumeInfo.imageLinks &&
@@ -26,16 +26,16 @@ function Card({ bookData }) {
           return (
             <div
               key={item.id}
-              className="card col-md-3 mx-3 my-3"
+              className="card mt-4 mx-4"
               onClick={() => handleShow(item)}
             >
               <img
                 src={thumbnail}
-                className="card-img-top mx-auto m-3 p-3"
+                className="card-img-top mx-auto m-2 p-2"
                 alt="book image"
               />
               <div className="card-body">
-                <h5 className="card-title fw-bold fs-5 text-center">{title}</h5>
+                <h5 className="card-title fw-bold fs-6 text-center">{title}</h5>
                 <p className="card-text text-center">{authors}</p>
               </div>
             </div>

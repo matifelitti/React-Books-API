@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -18,9 +18,6 @@
   max-height: 90vh;
   max-width: 600px;
   width: 90%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-header {
@@ -28,14 +25,12 @@
   color: white;
   border-bottom: 2px solid rgba(69, 34, 98, 255);
   padding: 1rem;
-  display: flex;
-  align-items: center;
 }
 
 .modal-header img {
   width: 120px;
   height: auto;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .modal-title {
@@ -48,7 +43,24 @@
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
+  scrollbar-color: rgba(69, 34, 98, 255) #ffffff;
+  border-radius: 10px;
 }
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(69, 34, 98, 255);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(69, 34, 98, 255);
+}
+
+/* Para navegadores que no soportan las pseudo-clases de WebKit */
 
 .modal-body .content {
   color: rgba(69, 34, 98, 255);

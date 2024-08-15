@@ -1,7 +1,12 @@
 .card {
+  width: 240px;
   background-color: rgb(180, 233, 230);
   border: 2px solid rgba(69, 34, 98, 255);
   cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(0.95);
 }
 
 .card-img-top {
