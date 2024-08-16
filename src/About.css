@@ -1,4 +1,16 @@
+body {
+  background-color: rgba(228, 239, 245, 255);
+}
+
 #about-container {
   background-color: rgba(69, 34, 98, 255);
   color: white;
+}
+
+h3 {
+  letter-spacing: 2px;
+}
+
+img {
+  width: 70%;
 }

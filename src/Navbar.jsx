@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <div className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <img
-          src="src/assets/logo.png"
-          className="logo"
-          alt="library image"
-        ></img>
+        <Link to="/">
+          <img
+            src="src/assets/logo.png"
+            className="logo"
+            alt="library image"
+          ></img>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,14 +27,14 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav align-items-center">
             <li className="nav-item">
-              <a className="nav-link me-3" href="/">
+              <Link className="nav-link me-3" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link me-3" href="#">
+              <Link className="nav-link me-3" to="/about">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

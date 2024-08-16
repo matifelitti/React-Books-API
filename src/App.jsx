@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Navbar from "./Navbar";
@@ -6,11 +7,13 @@ import About from "./About";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <SearchContainer />
-      <About />
-    </>
+      <Routes>
+        <Route path="/" element={<SearchContainer />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 

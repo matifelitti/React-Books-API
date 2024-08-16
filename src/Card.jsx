@@ -13,7 +13,7 @@ function Card({ bookData }) {
   };
 
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center mb-4">
       {bookData.map((item) => {
         const thumbnail =
           item.volumeInfo.imageLinks &&

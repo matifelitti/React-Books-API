@@ -10,7 +10,7 @@ function SearchContainer() {
   const searchBooks = () => {
     axios
       .get(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchInput}&key=AIzaSyBJ4bH0jtAP7_hL0NIE-5-hxj04y2KYaAk&maxResults=22`
+        `https://www.googleapis.com/books/v1/volumes?q=${searchInput}&key=AIzaSyBJ4bH0jtAP7_hL0NIE-5-hxj04y2KYaAk&maxResults=21`
       )
       .then((res) => setBookData(res.data.items))
       .catch((error) => console.log(error));
