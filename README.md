@@ -1,19 +1,42 @@
-# React Books Api
+# 📚 React Books API  
 
-## Welcome to the React Books Api project. This repository contains a web application that interacts with the Google Books API to provide a book search and viewing experience.
+Welcome to the **React Books API** project! This web application leverages the **Google Books API** to provide users with an interactive book search and viewing experience.  
 
-## Technologies Used
+## 🚀 Technologies Used  
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- Axios
-- React
+- **React** – For building the user interface.  
+- **JavaScript (ES6+)** – For handling logic and interactivity.  
+- **Axios** – For fetching data from the Google Books API.  
+- **Bootstrap** – For responsive styling and layout.  
+- **HTML5 & CSS3** – For structuring and styling the application.  
 
-## Features
+## ✨ Features  
 
-- Navbar: Navigation bar to access different sections of the application.
-- Search Container: Container for searching books using the Google Books API.
-- Cards: Cards that display basic information about each book, such as title, author, and a thumbnail of the cover.
-- Modal: Popup window providing additional information about the selected book and allowing you to open the book in a separate window.
+- **🔗 Navbar** – Provides easy navigation across different sections of the app.  
+- **🔍 Search Functionality** – Allows users to search for books using the **Google Books API**.  
+- **📖 Book Cards** – Displays key details such as title, author, and cover thumbnail.  
+- **📌 Modal Popup** – Shows additional book details and provides an option to open the book in a new window.  
+
+## 🛠️ Getting Started  
+
+To run the project locally:  
+
+1. **Clone the Repository**  
+   ```sh
+   git clone https://github.com/matifelitti/react-books-api.git  
+   cd react-books-api  
+   ```  
+2. **Install Dependencies**  
+   ```sh
+   npm install  
+   ```  
+3. **Run the Application**  
+   ```sh
+   npm start  
+   ```  
+
+## 📌 Future Enhancements  
+
+- 📂 **Save Books Feature** – Allow users to create a list of favorite books.  
+- ⭐ **User Reviews & Ratings** – Enable book reviews and ratings.  
+- 🎨 **Dark Mode** – Add a theme toggle for better user experience.  
