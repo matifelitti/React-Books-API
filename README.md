@@ -34,9 +34,3 @@ To run the project locally:
    ```sh
    npm start  
    ```  
-
-## 📌 Future Enhancements  
-
-- 📂 **Save Books Feature** – Allow users to create a list of favorite books.  
-- ⭐ **User Reviews & Ratings** – Enable book reviews and ratings.  
-- 🎨 **Dark Mode** – Add a theme toggle for better user experience.  
